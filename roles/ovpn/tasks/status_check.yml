@@ -1,0 +1,17 @@
+---
+- name: register container status
+  shell: "sleep 2;docker logs {{ ansible_ssh_host }} | grep -E 'openvpn|sshd'"
+  register: status
+
+- name: debug container status
+  debug:
+     msg: "{{ status.stdout_lines }}"
+
+- name: register openvpn status
+  shell: "sleep 3;docker exec -it {{ ansible_ssh_host }} tail -5 /var/log/openvpn/vpn_out.log" 
+  register: openvpn
+
+- name: debug openvpn status
+  debug:
+     msg: "{{ openvpn.stdout_lines }}"
+...

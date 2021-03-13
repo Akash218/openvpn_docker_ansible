@@ -1,0 +1,16 @@
+---
+- name: checking available ports     
+  block:
+     - name: assigning ports
+       script: port_check     
+       register: sshport  
+       when: ssh_port == ""
+
+- set_fact:
+     ssh_port: "{{ sshport.stdout }}"
+  when: ssh_port == ""
+
+- name: debug port
+  debug:
+     msg: "{{ ssh_port }}"
+...

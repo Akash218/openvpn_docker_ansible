@@ -1,0 +1,1 @@
+docker run -itd -env-file env.list --cap-add=NET_ADMIN --publish 1055:22 --device /dev/net/tun --sysctl net.ipv6.conf.all.disable_ipv6=0 -v <path_to_openvpn_file_directory>:/client <image_name>

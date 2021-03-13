@@ -1,0 +1,27 @@
+---
+# please check the port is available before entering here.
+
+ssh_port: ""
+
+# REQUIRED: MUST
+
+ovpn_file: ""
+
+# REQUIRED: OPTIONAL, private key file
+
+pkcs12_file: ""
+
+# REQUIRED: OPTIONAL (LOWER PRECEDENCE THAN USERNAME AND PASSWORD)
+
+pass_file: ""
+
+# REQUIRED: OPTIONAL (HIGHER PRECEDENCE THAN PASS FILE)
+
+username: ""
+password: ""
+
+# path(client files)
+
+client_files_path: ""
+
+...
