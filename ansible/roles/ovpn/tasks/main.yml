@@ -1,6 +1,0 @@
----
-- include: pre_config.yml
-- include: variable.yml
-- include: start_container.yml
-- include: status_check.yml
-...
