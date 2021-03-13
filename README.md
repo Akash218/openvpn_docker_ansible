@@ -78,7 +78,7 @@
 
 ## Autobots ##
 
-NOTE: Ansible playbook available for installing and running openvpn containers in a "Single Command".for more information, please visit akash/openvpn git repository.
+NOTE: Ansible playbook [available](https://github.com/Akash218/openvpn_docker_ansible/tree/feature/ansible) for installing and running openvpn containers in a "Single Command".for more information, please visit [here](https://github.com/Akash218/openvpn_docker_ansible/blob/feature/ansible/roles/ovpn/README.md).
 
 ## COMMANDS FOR VALIDATE CONTAINER AND OPENVPN SERVICES ##
 
